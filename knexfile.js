@@ -51,6 +51,13 @@ module.exports = {
 			tableName: "knex_migrations",
 			directory: "./data/migrations",
 		},
+		dialect: "postgres",
+		dialectOptions: {
+			ssl: {
+				require: true, // This will help you. But you will see nwe error
+				rejectUnauthorized: false, // This line will fix new error
+			},
+		},
 	},
 	test: {
 		client: "postgresql",
