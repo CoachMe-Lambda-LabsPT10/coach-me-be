@@ -42,7 +42,7 @@ module.exports = {
 	},
 	production: {
 		client: "pg",
-		connection: process.env.DATABASE_URL,
+		connection: process.env.DATABASE_URL + "?ssl=true",
 		pool: {
 			min: 2,
 			max: 10,
@@ -50,6 +50,13 @@ module.exports = {
 		migrations: {
 			tableName: "knex_migrations",
 			directory: "./data/migrations",
+		},
+		dialect: "postgres",
+		dialectOptions: {
+			ssl: {
+				require: true, // This will help you. But you will see nwe error
+				rejectUnauthorized: false, // This line will fix new error
+			},
 		},
 	},
 	test: {
