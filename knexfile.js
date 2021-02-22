@@ -50,7 +50,6 @@ module.exports = {
 		migrations: {
 			tableName: "knex_migrations",
 			directory: "./data/migrations",
-		}
 		},
 	},
 	test: {
