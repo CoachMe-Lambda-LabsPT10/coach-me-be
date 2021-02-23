@@ -51,6 +51,10 @@ module.exports = {
 			tableName: "knex_migrations",
 			directory: "./data/migrations",
 		},
+		ssl: {
+			sslmode: "require",
+			rejectUnauthorized: false,
+		},
 	},
 	test: {
 		client: "pg",
