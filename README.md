@@ -7,7 +7,7 @@
 
 # API Documentation
 
-#### Backend delpoyed at Heroku: <br>
+#### Backend delpoyed at Heroku: https://coach-me-labs.herokuapp.com/
 
 ## Getting started
 
