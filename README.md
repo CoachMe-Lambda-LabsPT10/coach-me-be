@@ -5,12 +5,6 @@
 ![](https://api.codeclimate.com/v1/badges/436b4f75e35a44e9b259/maintainability)
 ![](https://api.codeclimate.com/v1/badges/436b4f75e35a44e9b259/test_coverage)
 
-🚫 Note: All lines that start with 🚫 are instructions and should be deleted before this is posted to your portfolio. This is intended to be a guideline. Feel free to add your own flare to it.
-
-🚫 The numbers 1️⃣ through 3️⃣ next to each item represent the week that part of the docs needs to be comepleted by. Make sure to delete the numbers by the end of Labs.
-
-🚫 Each student has a required minimum number of meaningful PRs each week per the rubric. Contributing to docs does NOT count as a PR to meet your weekly requirements.
-
 # API Documentation
 
 #### Backend delpoyed at Heroku: <br>
@@ -20,13 +14,11 @@
 To get the server running locally:
 
 - Clone this repo
-- **yarn install** to install all required dependencies
-- **yarn server** to start the local server
-- **yarn test** to start server using testing environment
+- **npm install** to install all required dependencies
+- **num run server** to start the local server
+- **npm run test** to start server using testing environment
 
 ### Backend framework goes here
-
-🚫 Why did you choose this framework???
 
 - Point One
 - Point Two
@@ -34,8 +26,6 @@ To get the server running locally:
 - Point Four
 
 ## 2️⃣ Endpoints
-
-🚫This is a placeholder, replace the endpoints, access controll, and descriptioin to match your project
 
 #### Authenticaton & Registration Routes
 
@@ -78,9 +68,7 @@ To get the server running locally:
 
 # Data Model
 
-🚫This is just an example. Replace this with your data model
-
-#### 2️⃣ CLIENT
+#### CLIENT
 
 ---
 
@@ -119,7 +107,7 @@ To get the server running locally:
 }
 ```
 
-## 2️⃣ Actions
+## Actions
 
 🚫 This is an example, replace this with the actions that pertain to your backend
 
@@ -145,7 +133,7 @@ To get the server running locally:
 
 `deleteUser(userId)` -> deletes everything dependent on the user
 
-## 3️⃣ Environment Variables
+## Environment Variables
 
 In order for the app to function correctly, the user must set up their own environment variables.
 
