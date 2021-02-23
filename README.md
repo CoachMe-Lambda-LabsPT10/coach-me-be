@@ -57,14 +57,16 @@ To get the server running locally:
 
 #### Coach Routes
 
-| Method | Endpoint                | Access Control      | Description                                        |
-| ------ | ----------------------- | ------------------- | -------------------------------------------------- |
-| GET    | `/users/current`        | all users           | Returns info for the logged in user.               |
-| GET    | `/users/org/:userId`    | owners, supervisors | Returns all users for an organization.             |
-| GET    | `/users/:userId`        | owners, supervisors | Returns info for a single user.                    |
-| POST   | `/users/register/owner` | none                | Creates a new user as owner of a new organization. |
-| PUT    | `/users/:userId`        | owners, supervisors |                                                    |
-| DELETE | `/users/:userId`        | owners, supervisors |                                                    |
+| Method | Endpoint                          | Access Control      | Description                                                      |
+| ------ | ----------------------------------|-------------------- |------------------------------------------------------------------|
+| GET    | `/`                               | all coaches         | Returns list of all registered coaches.                          |
+| GET    | `/:id/`                           | client and coach    | Returns the coaches public profile.                              |
+| PUT    | `/:id`                            | coach               | Allows coach to update information on their profile.             |
+| DELETE | `/:id`                            | coach               | Allows coach to delete information on their profile.             |
+| GET    | `/:id/clients`                    | coach               | Returns all clients assigned to coach with that id.              |
+| POST   | `/:id/clients/:clientID`          | coach               | Assigns a coach to a client.                                     |
+| GET    | `:id/clients/:clientID`           | coach               | Finds coach by id, list of clients, & returns client info by id. |
+| DELETE | `/:id/clients/:clientID/sessions` | owners, supervisors |                                                                  |
 
 # Data Model
 
