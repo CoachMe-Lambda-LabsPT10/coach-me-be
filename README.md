@@ -25,7 +25,7 @@ To get the server running locally:
 - Point Three
 - Point Four
 
-## 2️⃣ Endpoints
+## Endpoints
 
 #### Authenticaton & Registration Routes
 
